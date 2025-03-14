@@ -1,0 +1,247 @@
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Root container */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* General Styles */
+body {
+  background-color: white;
+  color: #0a0a0a;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* Centering Content */
+.center-container {
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+/* Header */
+.header {
+  background: white;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Navigation */
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+  background: #b30000;
+  color: white;
+}
+
+/* Game List Layout */
+.game-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 20px;
+}
+
+/* Game Item */
+.game-item {
+  background: white;
+  border: 2px solid #b30000;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  width: 280px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.game-item:hover {
+  transform: scale(1.05);
+}
+
+/* Game Image */
+.game-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+  margin: auto;
+}
+
+/* Fix Buttons */
+.details-btn, .save-btn, .remove-btn {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+/* Modal Overlay */
+/* Fix the pop-up modal overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark semi-transparent overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Ensure modal content is visible */
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+  border: 2px solid #b30000;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  position: relative; /* Fix positioning */
+}
+
+/* Ensure the close button is visible */
+.close-btn {
+  background: red;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.close-btn:hover {
+  background: darkred;
+}
+
+/* Close Button */
+.close-btn {
+  background: red;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.close-btn:hover {
+  background: darkred;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .game-list {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* General Centering for Pages */
+.page-container {
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+/* Fix the game list layout */
+.game-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 20px;
+}
+
+/* Fix Game Cards */
+.game-item {
+  background: white;
+  border: 2px solid #b30000;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  width: 250px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.game-item:hover {
+  transform: scale(1.05);
+}
+
+/* Fix Game Images */
+.game-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Centered Text in All Pages */
+h2,
+h3,
+p {
+  text-align: center;
+}
+.page-container {
+  max-width: 900px;  /* Limits width for better readability */
+  margin: 0 auto;  /* Centers horizontally */
+  padding: 20px;
+  text-align: center;
+}
+
+.game-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Ensures the game cards are centered */
+  gap: 20px;
+  padding-top: 20px;
+}
