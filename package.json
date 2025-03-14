@@ -1,5 +1,5 @@
 {
-  "name": "cafee",
+  "name": "games",
   "homepage": "https://elly090102.github.io/games/",
   "private": true,
   "version": "0.0.0",
@@ -34,12 +34,12 @@
   "main": "eslint.config.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Elly090102/cafee.git"
+    "url": "git+https://github.com/Elly090102/games.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Elly090102/cafee/issues"
+    "url": "https://github.com/Elly090102/games/issues"
   }
 }

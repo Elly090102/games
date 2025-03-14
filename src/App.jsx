@@ -6,7 +6,7 @@ import Header from "./components/Header";
 
 export default function App() {
   return (
-    <BrowserRouter basename="/cafee">
+    <BrowserRouter basename="/games">
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
